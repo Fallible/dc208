@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DC208</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<header>
+    <a href="/index">
+        <img id="homeIcon" src="static/logo.png" alt="DC208 icon">
+    </a>
+    <h1 class="introTitle">Welcome to DC208!</h1>
+    <h2 class="introSubTitle">The home of the Idaho Hackerspace Network</h2>
+    <nav class="container">
+            <div class="navLinks"><a href="/index">Home</a></div>
+            <div class="navLinks"><a href="/Calendar">Calendar</a></div>
+            <div class="navLinks"><a href="/Comms">Comms</a></div>
+    </nav>
+</header>
+<body>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>
+{% extends "footer.html" %}
