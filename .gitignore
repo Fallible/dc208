@@ -2,3 +2,5 @@
 *.xml
 
 *.pyc
+
+dc208env/
