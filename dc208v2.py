@@ -16,9 +16,29 @@ def index():
 def calendar():
     return render_template('/Calendar.html')
 
-@app.route('/Comms')
-def comms():
-    return render_template('/Comms.html')
+@app.route('/News')
+def news():
+    return render_template('/News.html')
+
+@app.route('/Members')
+def members():
+    return render_template('/Members.html')
+
+@app.route('/Projects')
+def projects():
+    return render_template('/Projects.html')
+
+@app.route('/Page_Color')
+def page_color():
+    return render_template('/Page_Color.html')
+
+@app.route('/Spaces')
+def spaces():
+    return render_template('/Spaces.html')
+
+@app.route('/inComments')
+def in_comments():
+    return render_template('/inComments.html')
 
 
 if __name__ == '__main__':
