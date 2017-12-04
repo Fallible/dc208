@@ -6,24 +6,30 @@
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
     <link rel="icon" type="image/x-icon" href="static/favicon.ico">
 </head>
-<body>
-<header>
+
+<section id="page">
+<div class="homeIcon">
     <a href="/index">
         <img id="homeIcon" src="static/logo.svg" alt="DC208 icon">
     </a>
-    <h1 class="introTitle">Welcome to DC208!</h1>
-    <h2 class="introSubTitle">The home of the Idaho Hackerspace Network</h2>
-    <nav class="navContainer">
-        <div class="navLinks"><a href="/index">Home</a></div>
-        <div class="navLinks"><a href="/Calendar">Calendar</a></div>
-        <div class="navLinks"><a href="/Members">Members</a></div>
-        <div class="navLinks"><a href="/Spaces">Spaces</a></div>
-    </nav>
+</div>
+<header>
+    <div class="titles">
+        <h1 id="introTitle">Welcome to DC208!</h1>
+        <h2 id="introSubTitle">The home of the Idaho Hackerspace Network</h2>
+    </div>
 </header>
+<nav class="navContainer">
+    <div class="navLinks"><a href="/index">Home</a></div>
+    <div class="navLinks"><a href="/Calendar">Calendar</a></div>
+    <div class="navLinks"><a href="/Members">Members</a></div>
+    <div class="navLinks"><a href="/Spaces">Spaces</a></div>
+</nav>
 
 
 {% block content %}{% endblock %}
 
-</body>
+</section>
+
 </html>
 {% extends "footer.html" %}
