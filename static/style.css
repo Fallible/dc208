@@ -40,11 +40,15 @@
     border-radius: 4px;
     padding: 5px;
     max-width: 60%;
+    min-width: 10em;
 }
 
 
 header {
     grid-area: header;
+    display: inline-grid;
+    grid-template-rows: 1fr
+                        1fr;
 }
 
 
