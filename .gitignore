@@ -4,3 +4,4 @@
 *.pyc
 
 dc208env/
+.idea/
