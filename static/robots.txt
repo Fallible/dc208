@@ -1,0 +1,6 @@
+# robots.txt for http://overdoityourself.com
+
+User-agent: *
+
+
+# CTF entry: /Page_Color
